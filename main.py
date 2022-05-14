@@ -18,6 +18,20 @@ loginButton = driver.find_element_by_id('btn_login')
 loginButton.click()
 
 
+time.sleep(10)
+warehouse = driver.find_element_by_class_name('menu-icon-2')
+warehouse.click()
+time.sleep(1)
+
+collectall = driver.find_element_by_class_name('new_button')
+collectall.click()
+time.sleep(1)
+
+daily = driver.find_element_by_class_name('field-gr.fg-1')
+daily.click()
+
+
+
 # srchbutton = driver.find_element(By.CLASS_NAME,'gNO89b')
 # time.sleep(3)
 # srchbutton.click()
